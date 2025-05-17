@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sai Sriyan" />
+    <meta
+      name="description"
+      content="Write your word or sentence in the text area and find out the word count!"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dxcywxeqq/image/upload/v1718379539/raszbfa5b8g45s3zultm.png"
+    />
+    <title>Word Length Calculator</title>
+    <style>
+      .icon {
+        width: 40px;
+        transition: all 0.2s ease-in-out;
+      }
+      .icon:hover {
+        cursor: pointer;
+        width: 50px;
+      }
+      @font-face {
+        font-family: "mainFont";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718380814/Raleway-VariableFont_wght_v5ds7r.ttf");
+      }
+      @font-face {
+        font-family: "mainFontItalic";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718380911/Raleway-Italic-VariableFont_wght_mneu7f.ttf");
+      }
+      body {
+        font-size: 62.5%;
+        background-color: black;
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: mainFont, sans-serif;
+      }
+      footer {
+        font-size: 1.25rem;
+      }
+      textarea {
+        font-size: 1.8rem;
+        width: 80%;
+        height: 40%;
+      }
+      .head {
+        text-decoration: underline;
+        color: rgb(60, 73, 255);
+      }
+      .tiny {
+        font-family: mainFontItalic, sans-serif;
+      }
+    </style>
+  </head>
+  <script src="script.js" defer></script>
+  <body>
+    <header>
+      <h1 class="head">Word Length Calculator</h1>
+      <p class="tiny">See the word count for a word or sentence!</p>
+    </header>
+
+    <textarea name="wordSpace" id="words" rows="05"> </textarea>
+    <p id="wordLength">
+      Word Length:
+      <span id="wordLengthCount">0</span>
+    </p>
+    <hr />
+    <footer>
+      <a href="https://github.com/Sriyan-Nakka" target="_blank"
+        ><svg
+          class="icon github"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <path
+            fill="white"
+            d="M12 1A10.89 10.89 0 0 0 1 11.77A10.79 10.79 0 0 0 8.52 22c.55.1.75-.23.75-.52v-1.83c-3.06.65-3.71-1.44-3.71-1.44a2.86 2.86 0 0 0-1.22-1.58c-1-.66.08-.65.08-.65a2.31 2.31 0 0 1 1.68 1.11a2.37 2.37 0 0 0 3.2.89a2.33 2.33 0 0 1 .7-1.44c-2.44-.27-5-1.19-5-5.32a4.15 4.15 0 0 1 1.11-2.91a3.78 3.78 0 0 1 .11-2.84s.93-.29 3 1.1a10.7 10.7 0 0 1 5.5 0c2.1-1.39 3-1.1 3-1.1a3.78 3.78 0 0 1 .11 2.84A4.15 4.15 0 0 1 19 11.2c0 4.14-2.58 5.05-5 5.32a2.5 2.5 0 0 1 .75 2v2.95c0 .35.2.63.75.52A10.8 10.8 0 0 0 23 11.77A10.89 10.89 0 0 0 12 1"
+          /></svg
+      ></a>
+      <a href="https://sriyan-blogs.blogspot.com/"
+        ><svg
+          class="icon blogger"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 32 32"
+        >
+          <path
+            fill="white"
+            d="M13 7a6 6 0 0 0-6 6v7a6 6 0 0 0 6 6h7a6 6 0 0 0 6-6v-5a1 1 0 0 0-1-1h-1a1 1 0 0 1-1-1a6 6 0 0 0-6-6zm0 5h4c.55 0 1 .45 1 1s-.45 1-1 1h-4c-.55 0-1-.45-1-1s.45-1 1-1m0 7h7c.55 0 1 .45 1 1s-.45 1-1 1h-7c-.55 0-1-.45-1-1s.45-1 1-1"
+          /></svg
+      ></a>
+      <br />
+      &copy;Copyright, Sai Sriyan Nakka 2025, All Rights Reserved. <br />
+      Version 1.2 UC Edition
+    </footer>
+  </body>
+</html>

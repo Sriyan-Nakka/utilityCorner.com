@@ -10,6 +10,16 @@
     />
     <title>Utility Corner</title>
     <style>
+      @font-face {
+        font-family: "bodyFont";
+        src: url("websiteFonts/JosefinSans-Regular.ttf");
+      }
+      @font-face {
+        font-family: "headFont";
+        src: url("websiteFonts/rammettoone-regular-webfont.woff2")
+            format("woff2"),
+          url("websiteFonts/rammettoone-regular-webfont.woff") format("woff");
+      }
       .icon {
         width: 40px;
         transition: all 0.2s ease-in-out;
@@ -24,6 +34,7 @@
         color: white;
         font-size: 1.6rem;
         text-align: center;
+        font-family: bodyFont, sans-serif;
       }
       footer {
         font-size: 1.25rem;
@@ -35,6 +46,7 @@
       }
       h1 {
         text-decoration: underline;
+        font-family: headFont, sans-serif;
       }
       #contentContainer {
         background-color: hsla(0, 0%, 12%, 0.4);
@@ -72,6 +84,18 @@
       #utility3 {
         background-color: hsl(281, 100%, 15%);
       }
+      #utility4 {
+        background-color: hsl(0, 0%, 25%);
+      }
+      #utility5 {
+        background-color: hsl(236, 64%, 13%);
+      }
+      #utility6 {
+        background-color: hsl(60, 100%, 25%);
+      }
+      .utilityHead {
+        font-family: headFont, sans-serif;
+      }
     </style>
   </head>
   <body>
@@ -84,11 +108,10 @@
       <hr />
       <main>
         <u> Click on the utility that you need! </u> <br />
-        <!-- <br /> -->
         <div id="utilities">
           <div id="utility1" class="utility">
             <a href="./greetingCardGenerator">
-              <p><b>Greeting Card Generator</b></p>
+              <p class="utilityHead">Greeting Card Generator</p>
               <p class="description">
                 A Greeting Card Generator, useful during special occasions!
               </p>
@@ -96,7 +119,7 @@
           </div>
           <div id="utility2" class="utility">
             <a href="./pomodoroTimer">
-              <p><b>Pomodoro Timer</b></p>
+              <p class="utilityHead">Pomodoro Timer</p>
               <p class="description">
                 A Pomodoro Timer to help with your productivity!
               </p>
@@ -104,7 +127,7 @@
           </div>
           <div id="utility3" class="utility">
             <a href="./randomNumberGenerator">
-              <p><b>Random Number Generator</b></p>
+              <p class="utilityHead">Random Number Generator</p>
               <p class="description">
                 A Random Number Generator which will help you select a random
                 number!
@@ -113,7 +136,7 @@
           </div>
           <div id="utility4" class="utility">
             <a href="./randomThoughtGenerator">
-              <p><b>Random Thought Generator</b></p>
+              <p class="utilityHead">Random Thought Generator</p>
               <p class="description">
                 A Random Thought Generator which will generate thoughts to share
                 with your friends!
@@ -122,7 +145,7 @@
           </div>
           <div id="utility5" class="utility">
             <a href="./wordLengthCalculator">
-              <p><b>Word Length Calculator</b></p>
+              <p class="utilityHead">Word Length Calculator</p>
               <p class="description">
                 A Word Length Calculator, where you can calculate the length of
                 a word!
@@ -131,10 +154,10 @@
           </div>
           <div id="utility6" class="utility">
             <a href="./textFormatter">
-              <p><b>Text Formatter</b></p>
+              <p class="utilityHead">Text Formatter</p>
               <p class="description">
-                A Text Formatter, which will help you customize a piece of text
-                and share with your friends!
+                A Text Formatter, which will help you customize text and share
+                it with your friends!
               </p>
             </a>
           </div>
@@ -167,7 +190,7 @@
           ></a>
           <br />
           &copy;Copyright, Sai Sriyan Nakka 2025, All Rights Reserved.
-          <br />Version 0.51 <br />
+          <br />Version 0.8 <br />
         </center>
       </footer>
     </div>

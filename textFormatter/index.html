@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Sai Sriyan" />
+    <meta
+      name="description"
+      content="A text formatter which you can use to format text"
+    />
+    <link
+      rel="icon"
+      href="https://res.cloudinary.com/dxcywxeqq/image/upload/v1718527560/jedenpx6uag3mdrvfsof.png"
+      type="image/png"
+    />
+    <title>Text Formatter</title>
+    <style>
+      .icon {
+        width: 60px;
+      }
+      @font-face {
+        font-family: "Raleway";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718380814/Raleway-VariableFont_wght_v5ds7r.ttf");
+      }
+      @font-face {
+        font-family: "Rubik";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718525834/Rubik-VariableFont_wght_x5vjrn.ttf");
+      }
+      @font-face {
+        font-family: "Posten One";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718526079/PoetsenOne-Regular_vngpv5.ttf");
+      }
+      @font-face {
+        font-family: "Ubuntu";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718526200/Ubuntu-Regular_ikcm8c.ttf");
+      }
+      @font-face {
+        font-family: "Reddit Sans";
+        src: url("https://res.cloudinary.com/dxcywxeqq/raw/upload/v1718526165/RedditSans-VariableFont_wght_whpag9.ttf");
+      }
+
+      body {
+        font-size: 62.5%;
+        background-color: black;
+        color: white;
+        font-size: 1.6rem;
+        text-align: center;
+        font-family: sans-serif;
+        font-family: Rubik, sans-serif;
+      }
+      footer {
+        font-size: 1.25rem;
+      }
+      #head {
+        text-decoration: underline;
+        color: blueviolet;
+      }
+      #theText {
+        font-size: 1.8rem;
+        width: 85%;
+      }
+      button,
+      select {
+        font-size: 1.3rem;
+      }
+      #boldButton {
+        font-weight: bold;
+      }
+      #strikethroughButton {
+        text-decoration: line-through;
+      }
+      #italicButton {
+        font-style: italic;
+      }
+      #strikethroughFormatButton {
+        text-decoration: line-through;
+      }
+      #formattedText {
+        padding: 5px;
+        background-color: hsl(0, 0%, 0%);
+        color: white;
+      }
+      #redButton,
+      #blueButton,
+      #greenButton {
+        padding: 20px;
+        box-shadow: none;
+      }
+      #redButton {
+        background-color: red;
+      }
+      #greenButton {
+        background-color: green;
+      }
+      #blueButton {
+        background-color: lightblue;
+      }
+      details {
+        color: greenyellow;
+      }
+      summary {
+        color: yellow;
+        background-color: hsla(84, 100%, 59%, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <script src="script.js" defer></script>
+    <header>
+      <h1 id="head">Text Formatter</h1>
+      <p>
+        You can format text and copy it to your clipboard <br />
+        <details>
+          <summary>How to Use</summary>
+          <br />
+          Enter the text in given text area and select the customization options
+          you want below the text area. Do your necessary customizations,
+          screenshot the customized/formatted text and share it with your
+          friends!
+          <br />
+          The text you entered in the textarea is saved even after you reload
+          the page with the help of local storage. Happy formatting! :)
+        </details>
+      </p>
+    </header>
+    <main>
+      Enter the text needed to be formatted in the given textarea below: <br />
+      <br />
+      <textarea id="theText" rows="4"></textarea> <br />
+      <div class="formattingOptions">
+        <button id="boldFormatButton"><b>B</b></button>
+        <button id="strikethroughFormatButton">S</button>
+        <button id="italicFormatButton"><i>I</i></button>
+        <button id="underlineFormatButton"><u>U</u></button><br />
+        <br />
+        <button id="boldUnformatButton">Unformat Bold</button>
+        <br />
+        <button id="strikethroughUnformatButton">Unformat Striketrough</button>
+        <br />
+        <button id="italicUnformatButton">Unformat Italic</button> <br />
+        <button id="underlineUnformatButton">Unformat Underline</button> <br />
+        <br />
+
+        Text Color: <input type="color" id="otherColor" value="#ffffff" />
+        <br />
+        <br />
+
+        Font:
+        <select name="font" id="fontName">
+          <option value="Serif">Serif</option>
+          <option value="Sans Serif">Sans Serif</option>
+          <option value="Reddit Sans">Reddit Sans</option>
+          <option value="Posten One">Posten One</option>
+          <option value="Raleway">Raleway</option>
+          <option value="Ubuntu">Ubuntu</option>
+        </select>
+        <br /><br />
+        Font Size:
+        <input
+          type="number"
+          id="fontSize"
+          min="25"
+          max="100"
+          style="font-size: 1.2rem"
+          value="26"
+        />
+        px
+      </div>
+      <br />
+      Formatted text:
+      <p id="formattedText"></p>
+    </main>
+    <hr />
+    <footer>
+      &copy;Copyright, Sai Sriyan Nakka, All Rights Reserved. <br />
+      Version 1.2 UC Edition
+    </footer>
+  </body>
+</html>
