@@ -1,0 +1,10 @@
+{
+  "name": "Utility Corner",
+  "short_name": "Utilities",
+  "description": "A website with a variety of useful utilities!",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#262626",
+  "theme_color": "#ffffff",
+  "orientation": "any"
+}
