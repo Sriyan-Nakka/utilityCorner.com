@@ -34,3 +34,113 @@ function generateGreetingCard() {
   watermark.style.color = nameColor;
   name.innerHTML = yourName;
 }
+
+document.querySelector("#fontHead").addEventListener("change", function (e) {
+  document.querySelector("#fontResetButton").style.display = "block";
+
+  e.preventDefault();
+  const file = e.target.files[0];
+  const blobUrl = URL.createObjectURL(file);
+  const headFontName = "headFont_" + Date.now();
+
+  css = `
+        @font-face {
+          font-family: "${headFontName}";
+          src: url("${blobUrl}");
+        }
+
+        .heading {
+          font-family: "${headFontName}";
+        }
+          `;
+
+  const style = document.createElement("style");
+  style.textContent = css;
+  document.head.appendChild(style);
+});
+
+document.querySelector("#fontContent").addEventListener("change", function (e) {
+  document.querySelector("#fontResetButton").style.display = "block";
+
+  e.preventDefault();
+  const file = e.target.files[0];
+  const blobUrl = URL.createObjectURL(file);
+  const contentFontName = "headFont_" + Date.now();
+
+  css = `
+        @font-face {
+          font-family: "${contentFontName}";
+          src: url("${blobUrl}");
+        }
+
+        .content1, .content2 {
+          font-family: "${contentFontName}";
+        }
+          `;
+
+  const style = document.createElement("style");
+  style.textContent = css;
+  document.head.appendChild(style);
+});
+
+document
+  .querySelector("#fontGreetingName")
+  .addEventListener("change", function (e) {
+    document.querySelector("#fontResetButton").style.display = "block";
+    e.preventDefault();
+    const file = e.target.files[0];
+    const blobUrl = URL.createObjectURL(file);
+    const contentFontName = "nameFont_" + Date.now();
+
+    css = `
+        @font-face {
+          font-family: "${contentFontName}";
+          src: url("${blobUrl}");
+        }
+
+        .name, .message {
+          font-family: "${contentFontName}";
+        }
+          `;
+
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.appendChild(style);
+  });
+
+document.querySelector("#fontResetButton").onclick = function () {
+  document.querySelector("#fontResetButton").style.display = "none";
+  document.querySelector("#fontHead").value = "";
+  document.querySelector("#fontContent").value = "";
+  document.querySelector("#fontGreetingName").value = "";
+
+  css = `
+        .name, .message, .content1, .content2, .heading {
+          font-family: "mainFont", sans-serif;
+        }
+          `;
+
+  const style = document.createElement("style");
+  style.textContent = css;
+  document.head.appendChild(style);
+};
+
+document.addEventListener("keyup", function (e) {
+  if (e.key === "Enter") generateGreetingCard();
+  else if (e.key === "Escape") {
+    document.querySelector("#fontResetButton").style.display = "none";
+    document.querySelector("#fontHead").value = "";
+    document.querySelector("#fontContent").value = "";
+    document.querySelector("#fontGreetingName").value = "";
+
+    css = `
+        .name, .message, .content1, .content2, .heading {
+          font-family: "mainFont", sans-serif;
+        }
+          `;
+
+    const style = document.createElement("style");
+    style.textContent = css;
+    document.head.appendChild(style);
+  }
+});

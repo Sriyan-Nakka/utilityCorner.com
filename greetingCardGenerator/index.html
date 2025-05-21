@@ -35,7 +35,6 @@
       .greetingCard {
         border: 2px solid whitesmoke;
         display: none;
-        /* width: 100px; */
       }
       h1{
         text-decoration: underline;
@@ -53,6 +52,9 @@
       #watermark{
         font-style: italic;
         font-size: 50%;
+      }
+      #fontResetButton{
+        display: none;
       }
     </style>
   </head>
@@ -89,9 +91,41 @@
       Content line 1: <input type="text" class="text1"/> <br />
       Content line 2: <input type="text" class="text2"/> <br />
       Your Name: <input type="text" class="yourName"/>
-      <br /><br />
+          <p>
+            <span id="headFontSpan"
+              >Choose the custom font for heading:
+            </span>
+            <input
+              type="file"
+              id="fontHead"
+              accept=".ttf, .otf, .woff,
+          .woff2"
+            />
+          </p>
+          <p>
+            <span id="contentFontSpan"
+              >Choose the custom font for content:
+            </span>
+            <input
+              type="file"
+              id="fontContent"
+              accept=".ttf, .otf, .woff,
+          .woff2"
+            />
+          </p>
+          <p>
+            <span id="nameFontSpan"
+              >Choose the custom font for name:
+            </span>
+            <input
+              type="file"
+              id="fontGreetingName"
+              accept=".ttf, .otf, .woff,
+          .woff2"
+            />
+          </p>
       <button class="generateButton" onclick="generateGreetingCard()">
-        Generate Greeting Card
+        Generate Greeting Card (Enter key)
       </button>
       <br /><br />
       <center>
@@ -109,6 +143,9 @@
           </span>
         </center>
       </div>
+      <p>
+      <button id="fontResetButton">Reset Fonts (Esc key)</button>
+      </p>
     </center>
     </main>
     <hr />
@@ -137,6 +174,7 @@
         ></a>
       <br>
       &copy;Copyright, Sai Sriyan Nakka. 
-      <br />Version 1.1 UC Edition</footer>
+      <br />Version 1.2 UC Edition
+    </footer>
   </body>
 </html>

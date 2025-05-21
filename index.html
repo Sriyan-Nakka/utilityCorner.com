@@ -90,6 +90,7 @@
       }
       #utility1 {
         background-color: hsl(90, 41%, 25%);
+        order: -2;
       }
       #utility2 {
         background-color: hsl(37, 98%, 30%);
@@ -108,6 +109,12 @@
       }
       #utility7 {
         background-color: hsl(232, 35%, 15%);
+        order: -1;
+      }
+      .newHeading,
+      .updateHeading {
+        font-family: bodyFont, sans-serif;
+        font-weight: bold;
       }
     </style>
   </head>
@@ -122,14 +129,19 @@
       <main>
         <u> Click on the utility that you need! </u> <br />
         <div id="utilities">
+          <!-- greeting Card Generator -->
           <div id="utility1" class="utility">
             <a href="./greetingCardGenerator">
-              <p class="utilityHead">Greeting Card Generator</p>
+              <p class="utilityHead">
+                Greeting Card Generator
+                <span class="updateHeading">(Update!)</span>
+              </p>
               <p class="description">
                 A Greeting Card Generator, useful during special occasions!
               </p>
             </a>
           </div>
+          <!-- pomodoro Timer -->
           <div id="utility2" class="utility">
             <a href="./pomodoroTimer">
               <p class="utilityHead">Pomodoro Timer</p>
@@ -138,6 +150,7 @@
               </p>
             </a>
           </div>
+          <!-- random number generator -->
           <div id="utility3" class="utility">
             <a href="./randomNumberGenerator">
               <p class="utilityHead">Random Number Generator</p>
@@ -147,6 +160,7 @@
               </p>
             </a>
           </div>
+          <!-- random thought generator -->
           <div id="utility4" class="utility">
             <a href="./randomThoughtGenerator">
               <p class="utilityHead">Random Thought Generator</p>
@@ -156,6 +170,7 @@
               </p>
             </a>
           </div>
+          <!-- word length generator -->
           <div id="utility5" class="utility">
             <a href="./wordLengthCalculator">
               <p class="utilityHead">Word Length Calculator</p>
@@ -165,6 +180,7 @@
               </p>
             </a>
           </div>
+          <!-- text formatter -->
           <div id="utility6" class="utility">
             <a href="./textFormatter">
               <p class="utilityHead">Text Formatter</p>
@@ -174,9 +190,13 @@
               </p>
             </a>
           </div>
+          <!-- font Viewer -->
           <div id="utility7" class="utility">
             <a href="./fontViewer">
-              <p class="utilityHead">Font Viewer</p>
+              <p class="utilityHead">
+                Font Viewer
+                <span class="newHeading">(New!)</span>
+              </p>
               <p class="description">
                 A Font Viewer to preview your fonts! (Website for Desktop
                 Recommended)
@@ -212,7 +232,7 @@
           ></a>
           <br />
           &copy;Copyright, Sai Sriyan Nakka 2025, All Rights Reserved.
-          <br />Version 1.1 <br />
+          <br />Version 1.2 <br />
         </center>
       </footer>
     </div>
