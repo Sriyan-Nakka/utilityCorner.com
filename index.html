@@ -58,7 +58,7 @@
         padding-top: 20px;
       }
       #contentContainer {
-        background-color: hsla(0, 0%, 12%, 0.9);
+        background-color: hsla(0, 0%, 12%, 0.95);
         border-radius: 10px;
         padding-bottom: 2px;
       }
@@ -106,6 +106,7 @@
       }
       #utility6 {
         background-color: hsl(60, 100%, 25%);
+        order: -3;
       }
       #utility7 {
         background-color: hsl(232, 35%, 15%);
@@ -116,6 +117,17 @@
         font-family: bodyFont, sans-serif;
         font-weight: bold;
       }
+      summary {
+        transition: all 0.2s ease-in-out;
+      }
+      summary:hover {
+        font-size: 1.78rem;
+        cursor: pointer;
+      }
+      details,
+      summary {
+        background-color: hsl(0, 0%, 12%, 0.9);
+      }
     </style>
   </head>
   <body>
@@ -125,6 +137,34 @@
         Welcome to Utility Corner, where you can find various utilities for your
         needs!
       </header>
+      <br />
+      <details>
+        <summary>
+          <b><u>Update Log (Version 1.3!)</u></b>
+        </summary>
+        <!-- v1.0 -->
+        <p>
+          <b>19-05-2025, Version 1.0:</b> The first complete version of Utility
+          Corner with 6 utilities.
+        </p>
+        <!-- v1.1 -->
+        <p>
+          <b>20-05-2025, Version 1.1:</b> Version 1.1 includes a new utility
+          called 'Font Viewer'. This utility can be used to view fonts.
+        </p>
+        <!-- v1.2 -->
+        <p>
+          <b>21-05-2025, Version 1.2:</b> Version 1.2 includes an update of
+          Greeting Card generator, with it's main feature being able to add your
+          own font for greeting card.
+        </p>
+        <!-- v1.3 -->
+        <p>
+          <b>21-05-2025, Version 1.3:</b> Version 1.3 has a built in website
+          Update Log, and an update of Text Formatter with the ability of adding
+          custom fonts.
+        </p>
+      </details>
       <hr />
       <main>
         <u> Click on the utility that you need! </u> <br />
@@ -183,7 +223,10 @@
           <!-- text formatter -->
           <div id="utility6" class="utility">
             <a href="./textFormatter">
-              <p class="utilityHead">Text Formatter</p>
+              <p class="utilityHead">
+                Text Formatter
+                <span class="updateHeading">(Update!)</span>
+              </p>
               <p class="description">
                 A Text Formatter, which will help you customize text and share
                 it with your friends!
@@ -232,7 +275,7 @@
           ></a>
           <br />
           &copy;Copyright, Sai Sriyan Nakka 2025, All Rights Reserved.
-          <br />Version 1.2 <br />
+          <br />Version 1.3 <br />
         </center>
       </footer>
     </div>
