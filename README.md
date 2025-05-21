@@ -4,12 +4,6 @@ Welcome to Utility Corner! It is a place where you can find useful utilities for
 
 ![Utility Corner Background Image.](https://res.cloudinary.com/dhhmanp00/image/upload/v1747801258/background_byrufa.jpg "Background Image for Utility Corner.")
 
-## Update Log:
-
-**20-05-2025, Version 1.1:** Version 1.1 includes a new utility, the 'Font Viewer' where you can view fonts or combination of fonts for a website.
-
-**21-05-2025, Version 1.2:** Version 1.2 consists of update for Greeting Card Generator.
-
 Also, check out my Blog at https://www.sriyansites.mywire.org
 
 Check out my WhatsApp Channel: https://www.whatsapp.com/channel/0029Vb8hmKi6xCSRaR3zhz2G
