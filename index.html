@@ -55,7 +55,10 @@
       header {
         text-decoration: underline;
         font-family: headFont, sans-serif;
-        padding-top: 20px;
+        padding-top: 1px;
+      }
+      header h1 {
+        margin-top: 25px;
       }
       #contentContainer {
         background-color: hsla(0, 0%, 12%, 0.95);
@@ -96,7 +99,6 @@
       }
       #utility3 {
         background-color: hsl(281, 100%, 15%);
-        order: -2;
       }
       #utility4 {
         background-color: hsl(0, 0%, 25%);
@@ -115,6 +117,9 @@
       }
       #utility9 {
         background-color: hsl(208, 79%, 35%);
+      }
+      #utility10 {
+        background-color: hsl(240, 21%, 15%);
         order: -1;
       }
       .newHeading,
@@ -148,7 +153,7 @@
       <br />
       <details>
         <summary>
-          <b><u>Update Log (Version 1.6!)</u></b>
+          <b><u>Update Log (Version 1.7!)</u></b>
         </summary>
         <!-- v1.0 -->
         <p>
@@ -199,6 +204,13 @@
           Version 1.6 updates Random Number Generator with the feature of being
           able to generate multiple random numbers at once.
         </p>
+        <!-- v1.7 -->
+        <p>
+          <b>27-05-2025, Version 1.7:</b> <br />
+          <br />
+          Version 1.7 adds a new utility called 'Bingo Card Generator', which
+          will help you to generate Bingo cards with ease.
+        </p>
       </details>
       <hr />
       <main>
@@ -225,10 +237,7 @@
           <!-- random number generator -->
           <div id="utility3" class="utility">
             <a href="./randomNumberGenerator">
-              <p class="utilityHead">
-                Random Number Generator
-                <span class="updateHeading">(Update!)</span>
-              </p>
+              <p class="utilityHead">Random Number Generator</p>
               <p class="description">
                 A Random Number Generator which will help you select a random
                 number!
@@ -287,13 +296,23 @@
           <!-- password generator -->
           <div id="utility9" class="utility">
             <a href="./passwordGenerator">
-              <p class="utilityHead">
-                Password Generator
-                <span class="newHeading">(New!)</span>
-              </p>
+              <p class="utilityHead">Password Generator</p>
               <p class="description">
                 A Password Generator to help you generate strong passwords just
                 the way you like!
+              </p>
+            </a>
+          </div>
+          <!-- bingo card generator -->
+          <div id="utility10" class="utility">
+            <a href="./bingoCardGenerator">
+              <p class="utilityHead">
+                Bingo Card Generator
+                <span class="newHeading">(New!)</span>
+              </p>
+              <p class="description">
+                A Bingo Card Generator, where you can generate Bingo cards with
+                ease!
               </p>
             </a>
           </div>
@@ -326,7 +345,7 @@
           ></a>
           <br />
           &copy;Copyright, Sai Sriyan Nakka 2025, All Rights Reserved.
-          <br />Version 1.6 <br />
+          <br />Version 1.7 <br />
         </center>
       </footer>
     </div>
