@@ -4,7 +4,7 @@
   "description": "A website with a variety of useful utilities!",
   "start_url": ".",
   "display": "standalone",
-  "background_color": "#262626",
+  "background_color": "#000000",
   "theme_color": "#ffffff",
   "orientation": "any",
   "icons": [
